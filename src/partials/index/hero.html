@@ -1,7 +1,7 @@
 <section class="hero">
   <div class="container">
     <div class="hero__text">
-      <h1 class="hero__title">Session Artists for your dream project</h1>
+      <h1 class="hero__title">Session Artists for your dream project.</h1>
       <div class="hero__circles">
         <div class="hero__circle"></div>
         <div class="hero__circle"></div>
@@ -175,8 +175,26 @@
         </div>
       </li>
     </ul>
-    <svg class="hero__bg" width="2013" height="1318">
-      <use href="./svg/icons.svg#background"></use>
-    </svg>
+    <picture>
+      <source
+        srcset="
+          ./img/desktop/index/hero/background-img@1x-desktop.webp 1x,
+          ./img/desktop/index/hero/background-img@2x-desktop.webp 2x
+        "
+        media="(min-width: 1170px)"
+      />
+      <source
+        srcset="
+          ./img/mobile/index/hero/background-img@1x-mobile.webp 1x,
+          ./img/mobile/index/hero/background-img@2x-mobile.webp 2x
+        "
+        media="(max-width: 1169px)"
+      />
+      <img
+        class="hero__bg"
+        src="./img/mobile/index/hero/background-img@1x-mobile.webp 1x"
+        alt="Guitar"
+      />
+    </picture>
   </div>
 </section>

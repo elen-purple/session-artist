@@ -28,7 +28,6 @@
 
     &__btnicon {
         fill: $dark-text;
-        transition: fill $transition;
     }
 
     &__iconbtn:hover &__btnicon,
@@ -63,7 +62,6 @@
         color: $dark-text;
         font-size: 16px;
         font-weight: 400;
-        transition: border $transition;
 
         &:hover,
         &:focus {
@@ -78,7 +76,6 @@
             color: $dark-text;
             font-size: 16px;
             font-weight: 400;
-            transition: color $transition;
         }
     }
 
@@ -125,7 +122,6 @@
         color: $light-text;
         font-size: 16px;
         font-weight: 600;
-        transition: background-color $transition, color $transition;
 
         &:hover,
         &:focus {
