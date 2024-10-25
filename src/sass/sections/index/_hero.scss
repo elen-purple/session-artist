@@ -155,7 +155,8 @@
         }
     }
 
-    &__item {
+    &__link {
+        display: block;
         min-width: 155px;
         position: relative;
         border-radius: 5px;
@@ -180,10 +181,11 @@
         align-items: center;
         opacity: 0;
         transition: opacity $transition;
+    }
 
-        &:hover {
-            opacity: 1;
-        }
+    &__link:hover &__overlay,
+    &__link:focus &__overlay {
+        opacity: 1;
     }
 
     &__header {
