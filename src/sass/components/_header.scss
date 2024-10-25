@@ -1,0 +1,141 @@
+.header {
+    padding: 15px 0;
+    border-bottom: 1px solid $line-color;
+
+    @media screen and (min-width: 1170px) {
+        padding: 23px 0 20px;
+    }
+
+    & .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @media screen and (min-width: 1170px) {
+            justify-content: start;
+        }
+    }
+
+    &__iconbtn {
+        padding: 0;
+        line-height: 0;
+        background-color: transparent;
+
+        @media screen and (min-width: 1170px) {
+            display: none;
+        }
+    }
+
+    &__btnicon {
+        fill: $dark-text;
+        transition: fill $transition;
+    }
+
+    &__iconbtn:hover &__btnicon,
+    &__iconbtn:focus &__btnicon {
+        fill: $green-color;
+    }
+
+    &__logo {}
+
+    &__icon {}
+
+    &__form {
+        display: none;
+
+        @media screen and (min-width: 1170px) {
+            display: block;
+            margin-left: 138px;
+            margin-right: 127px;
+        }
+    }
+
+    &__label {
+        position: relative;
+    }
+
+    &__input {
+        padding: 12px 40px 12px 19px;
+        background: $bg-color;
+        border-radius: 5px;
+        border: 1px solid $input-bg;
+        width: 361px;
+        color: $dark-text;
+        font-size: 16px;
+        font-weight: 400;
+        transition: border $transition;
+
+        &:hover,
+        &:focus {
+            border: 1px solid $green-color;
+
+            &::placeholder {
+                color: $green-color;
+            }
+        }
+
+        &::placeholder {
+            color: $dark-text;
+            font-size: 16px;
+            font-weight: 400;
+            transition: color $transition;
+        }
+    }
+
+    &__input:hover+&__button &__btnicon,
+    &__input:focus+&__button &__btnicon {
+        fill: $green-color;
+    }
+
+    &__button:hover &__btnicon,
+    &__button:focus &__btnicon {
+        fill: $green-color;
+    }
+
+    &__button {
+        position: absolute;
+        right: 11px;
+        top: 50%;
+        transform: translate(0, -50%);
+        padding: 0;
+        line-height: 0;
+        background-color: transparent;
+    }
+
+    &__list {
+        display: none;
+
+        @media screen and (min-width: 1170px) {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+    }
+
+    &__item {}
+
+    &__btn {
+        padding: 12px 0;
+        display: flex;
+        justify-content: center;
+        width: 165px;
+        border: 1px solid $green-color;
+        border-radius: 5px;
+        background-color: $green-color;
+        color: $light-text;
+        font-size: 16px;
+        font-weight: 600;
+        transition: background-color $transition, color $transition;
+
+        &:hover,
+        &:focus {
+            background-color: $green-bg !important;
+            color: $green-color;
+        }
+    }
+
+    &__item:nth-child(1) &__btn {
+        background-color: $bg-color;
+        color: $green-color;
+    }
+}
