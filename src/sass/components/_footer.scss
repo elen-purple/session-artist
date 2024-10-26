@@ -1,0 +1,105 @@
+.footer {
+    padding: 35px 0 15px;
+
+    @media screen and (min-width: 1170px) {
+        padding-top: 50px;
+    }
+
+    & .container {}
+
+    &__top {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 68px;
+        margin-bottom: 20px;
+
+        @media screen and (min-width: 1170px) {
+            column-gap: 0;
+            margin-bottom: 18px;
+            flex-wrap: nowrap;
+            align-items: center;
+        }
+    }
+
+    &__logo {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 25px;
+
+        @media screen and (min-width: 1170px) {
+            width: max-content;
+            margin-bottom: 0;
+            margin-right: auto;
+            margin-left: 133px;
+        }
+    }
+
+    &__icon {
+        @media screen and (min-width: 1170px) {
+            width: 154px;
+            height: 65px;
+        }
+    }
+
+    &__left {
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+
+        @media screen and (min-width: 1170px) {
+            gap: 50px;
+            flex-direction: row;
+            order: -1;
+        }
+    }
+
+    &__item {}
+
+    &__link {
+        color: $dark-text;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.19;
+
+        &:hover,
+        &:focus {
+            color: $green-color;
+        }
+
+        @media screen and (min-width: 1170px) {
+            font-size: 16;
+            line-height: 1.19;
+        }
+    }
+
+    &__right {
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+
+        @media screen and (min-width: 1170px) {
+            gap: 50px;
+            flex-direction: row;
+        }
+    }
+
+    &__bottom {
+        padding-top: 10px;
+        border-top: 1px solid $line-color;
+    }
+
+    &__copy {
+        color: $dark-text;
+        font-family: Rubik;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.21;
+        text-align: center;
+
+        @media screen and (min-width: 1170px) {
+            font-size: 16;
+            line-height: 1.19;
+        }
+    }
+}
