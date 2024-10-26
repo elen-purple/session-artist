@@ -1,0 +1,63 @@
+.search {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    padding: 19.5px 0;
+    background-color: $bg-color;
+
+    & .container {}
+
+    &__form {}
+
+    &__label {
+        position: relative;
+    }
+
+    &__input {
+        height: 45px;
+        width: 100%;
+        border-radius: 5px;
+        border: 1px solid $input-bg;
+        padding: 13px 50px 13px 20px;
+        color: $dark-text;
+        font-size: 16px;
+        font-weight: 400;
+        background-color: $bg-color;
+
+        &::placeholder {
+            color: $dark-text;
+            font-size: 16px;
+            font-weight: 400;
+        }
+
+        &:hover,
+        &:focus {
+            border: 1px solid $green-color;
+            color: $green-color;
+
+            &::placeholder {
+                color: $green-color;
+            }
+        }
+    }
+
+    &__input:hover+&__btn &__icon,
+    &__input:focus+&__btn &__icon {
+        fill: $green-color;
+    }
+
+    &__btn {
+        position: absolute;
+        right: 15px;
+        top: 50%;
+        transform: translate(0, -50%);
+        line-height: 0;
+        background-color: transparent;
+    }
+
+    &__btn:hover &__icon,
+    &__btn:focus &__icon {
+        fill: $green-color;
+    }
+}
