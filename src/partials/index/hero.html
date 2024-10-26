@@ -187,26 +187,28 @@
         </a>
       </li>
     </ul>
-    <picture>
-      <source
-        srcset="
-          ./img/desktop/index/hero/background-img@1x-desktop.webp 1x,
-          ./img/desktop/index/hero/background-img@2x-desktop.webp 2x
-        "
-        media="(min-width: 1170px)"
-      />
-      <source
-        srcset="
-          ./img/mobile/index/hero/background-img@1x-mobile.webp 1x,
-          ./img/mobile/index/hero/background-img@2x-mobile.webp 2x
-        "
-        media="(max-width: 1169px)"
-      />
-      <img
-        class="hero__bg"
-        src="./img/mobile/index/hero/background-img@1x-mobile.webp 1x"
-        alt="Guitar"
-      />
-    </picture>
+    <div class="hero__wrapper">
+      <picture>
+        <source
+          srcset="
+            ./img/desktop/index/hero/background-img@1x-desktop.webp 1x,
+            ./img/desktop/index/hero/background-img@2x-desktop.webp 2x
+          "
+          media="(min-width: 1170px)"
+        />
+        <source
+          srcset="
+            ./img/mobile/index/hero/background-img@1x-mobile.webp 1x,
+            ./img/mobile/index/hero/background-img@2x-mobile.webp 2x
+          "
+          media="(max-width: 1169px)"
+        />
+        <img
+          class="hero__bg"
+          src="./img/mobile/index/hero/background-img@1x-mobile.webp 1x"
+          alt="Guitar"
+        />
+      </picture>
+    </div>
   </div>
 </section>
