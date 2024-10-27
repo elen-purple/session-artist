@@ -19,7 +19,7 @@
       referrerpolicy="no-referrer"
     />
     <script type="module" crossorigin src="/session-artist/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/session-artist/assets/index-GkTMk4ds.css">
+    <link rel="stylesheet" crossorigin href="/session-artist/assets/index-KbClNe9D.css">
   </head>
   <body>
     <header class="header">
@@ -34,7 +34,7 @@
         <use href="/session-artist/assets/icons-DC_yXE68.svg#logo"></use>
       </svg>
     </a>
-    <button type="button" class="header__iconbtn">
+    <button type="button" data-menu-open class="header__iconbtn">
       <svg class="header__btnicon" width="20" height="20">
         <use href="/session-artist/assets/icons-DC_yXE68.svg#menu"></use>
       </svg>
@@ -333,6 +333,32 @@
 
     
     
+    <header data-menu class="menu is-hidden">
+  <div class="container">
+    <div class="menu__header">
+      <button type="button" data-search-menu class="menu__iconbtn">
+        <svg class="menu__btnicon" width="20" height="20">
+          <use href="/session-artist/assets/icons-DC_yXE68.svg#search"></use>
+        </svg>
+      </button>
+      <a href="./index.html" class="menu__logo">
+        <svg class="menu__icon" width="119" height="54">
+          <use href="/session-artist/assets/icons-DC_yXE68.svg#logo"></use>
+        </svg>
+      </a>
+      <button type="button" data-menu-close class="menu__iconbtn">
+        <svg class="menu__btnicon" width="20" height="20">
+          <use href="/session-artist/assets/icons-DC_yXE68.svg#close"></use>
+        </svg>
+      </button>
+    </div>
+    <ul class="menu__list">
+      <li class="menu__item"><button class="menu__btn">Login in</button></li>
+      <li class="menu__item"><button class="menu__btn">Register</button></li>
+    </ul>
+  </div>
+</header>
+
 
   </body>
 </html>
