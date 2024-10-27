@@ -5,6 +5,7 @@
     transform: translate(-50%, 0);
     padding: 19.5px 0;
     background-color: $bg-color;
+    z-index: 10;
 
     & .container {}
 

@@ -1,3 +1,4 @@
 import './js/search';
-import './js/register';
 import './js/login';
+import './js/register';
+import './js/menu';
