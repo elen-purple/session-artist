@@ -1,0 +1,70 @@
+.menu {
+    background-color: $bg-color;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+
+    & .container {}
+
+    &__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px 0;
+        border-bottom: 1px solid $line-color;
+        margin-bottom: 30px;
+    }
+
+    &__iconbtn {
+        padding: 0;
+        line-height: 0;
+        background-color: transparent;
+    }
+
+    &__btnicon {
+        fill: $dark-text;
+    }
+
+    &__iconbtn:hover &__btnicon,
+    &__iconbtn:focus &__btnicon {
+        fill: $green-color;
+    }
+
+    &__logo {}
+
+    &__icon {}
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+
+    &__item {}
+
+    &__btn {
+        width: 165px;
+        padding: 10.5px;
+        color: $green-color;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 1.19;
+        border-radius: 5px;
+        border: 1px solid $green-color;
+        background-color: $bg-color;
+
+        &:hover,
+        &:focus {
+            color: $green-color !important;
+            background-color: $green-bg !important;
+        }
+    }
+
+    &__item:nth-child(2) &__btn {
+        background-color: $green-color;
+        color: $light-text;
+    }
+}
